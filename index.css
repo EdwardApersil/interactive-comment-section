@@ -1,0 +1,249 @@
+body {
+    max-width: 1220px;
+    margin: 0 auto;
+    height: 100vh;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: hsl(228, 33%, 97%);
+}
+
+
+.addComment textarea {
+    width: 100%;
+    max-width: 800px;
+    /* height: 100px; */
+    border-radius: 10px;
+    border: 1px solid hsl(240, 71%, 96%);
+    padding: 10px;
+    margin-right: 10px; 
+}
+
+
+.comments {
+    background-color: hsl(228, 33%, 97%);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    padding: 2rem;
+    display: flex;
+    width: 1000px;
+    border-radius: 10px;
+    margin: 10px 0px 0px 0px;
+}
+
+
+.profile{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3rem;
+}
+
+.sub{
+    display: flex;
+}
+
+.name, .date{
+    margin-left: 10px;
+}
+
+.addComment {
+    background-color: hsl(228, 33%, 97%);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    display: flex;
+    padding: 2rem;
+    width: 1000px;
+    border-radius: 10px;
+    margin: 10px 0px 0px 0px;
+}
+
+.image img{
+    width: 30px;
+    height: 30px;
+}
+
+.content{
+    width: 800px;
+    margin-left: 3rem;
+}
+
+.date{
+    display: flex;
+    justify-content: end;
+    margin-left: 1rem;
+}
+
+.time{
+    margin-left: 10px;
+}
+
+.count {
+    background-color: hsl(240, 71%, 96%);
+    height: 90px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.reply{
+    display: flex;
+    justify-content: end;
+    
+}
+
+.rep-text{
+    margin-left: 10px;
+}
+
+.minus{
+    margin-top: 20px;
+}
+
+.counter{
+    margin-top: 10px;
+}
+
+button{
+    height: 50px;
+}
+
+
+/* reply comment */
+
+.replySection{
+    background-color: hsl(228, 33%, 97%);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    padding: 2rem;
+    display: flex;
+    width: 900px;
+    margin-left: 6.2rem;
+    border-radius: 10px;
+    margin-top: 15px;
+    /* margin: 10px 0px 0px 0px; */
+}
+
+.addReply{
+    display: none;
+}
+
+.addReply textarea {
+    width: 100%;
+    max-width: 800px;
+    height: 100px;
+    border-radius: 10px;
+    border: 1px solid hsl(240, 71%, 96%);
+    padding: 10px;
+    margin-right: 10px; 
+}
+
+
+.addShow{
+    display: block;
+    background-color: hsl(228, 33%, 97%);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    padding: 2rem;
+    width: 900px;
+    margin-left: 6.5rem;
+    border-radius: 10px;
+    margin-top: 25px;
+    /* margin: 10px 0px 0px 0px; */
+}
+
+.delete-text{
+    color: red;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+
+/* Original styles remain untouched */
+/* ... */
+
+/* Mobile-specific styles (using a media query) */
+@media (max-width: 768px) {
+    body {
+      /* Remove horizontal margins for full-width content */
+      margin: 0;
+      padding: 1rem;
+    }
+  
+    .addComment textarea,
+    .addReply textarea {
+      /* Scale down width for smaller screens */
+      width: 100%;
+      /* max-width: 100%; */
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .addReply{
+        width: auto;
+    }
+  
+    .replySection {
+      /* Ensure elements fit within viewport */
+      width: auto;
+      margin: 10px 0;
+      display: flex;
+      /* flex-wrap: wrap; */
+      flex-direction: column-reverse;
+    }
+
+    .addComment{
+        width: auto;
+    }
+
+    .comments{
+        width: auto;
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-direction: column-reverse;
+    }
+    .content{
+        width:auto;
+    }
+  
+    .profile {
+      /* Adjust layout for smaller screens */
+      /* display: block; */
+      margin-left: 0;
+    }
+  
+    .name{
+        margin-left: 15px;
+    }
+    .name,
+    .date,
+    .time {
+      /* Remove horizontal margins */
+      margin-left: 0;
+    }
+  
+    .count {
+      /* Stack elements vertically for better readability */
+      display: flex;
+      width: 50px;
+      justify-content: space-between;
+      height: 100%;
+      /* flex-direction: column; */
+    }
+  
+    .reply {
+      /* Align reply button to the left */
+      justify-content: start;
+    }
+  
+    .rep-text {
+      /* Remove unnecessary horizontal margin */
+      margin-left: 10px;
+    }
+  
+    .minus,
+    .counter {
+      /* Vertically center elements within the count container */
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+  
+    .addShow {
+      /* Align with parent comment */
+      margin-left: 0;
+    }
+  }
+  

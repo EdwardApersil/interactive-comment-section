@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/index.css">
+  <!-- <link href="./output.css" rel="stylesheet"> -->
+
+  <title>Interactive comments section</title>
+</head>
+
+<body>
+
+  <!-- Pull dynamic content from the data.json file -->
+  <main>
+    <section class="">
+
+      <div>
+        <div class="comments">
+          <div class="count">
+              <div class="plus"><img src="/images/icon-plus.svg" alt=""></div>
+              <div class="counter">0</div>
+              <div class="minus"><img src="/images/icon-minus.svg" alt=""></div>
+          </div>
+          <div class="text">
+              <div class="head">
+                  <div class="profile">
+                    <div class="sub">
+                      <div class="image mx-3"><img src="/images/avatars/image-amyrobson.png" height="30" alt=""></div>
+                      <div class="name mx-3">Edward Apersil</div>
+                    </div>
+                    <div class="reply">
+                        <div class="rep-btn"><img src="/images/icon-reply.svg" alt=""></div>
+                        <div class="rep-text">Reply</div>
+                  </div>
+              </div>
+              <p class="content">Tailwind CSS works by scanning all of your HTML files, JavaScript components, and any other templates for class names, generating the corresponding styles and then writing them to a static CSS file.</p>
+              <div class="date mx-3"> <p>12/12/2024</p>
+                <p class="time">12:45:50</p></div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <section id="commentsContainer">
+        
+        </section>
+
+        <section id="replyContainer">
+          
+        </section>
+        <div class="addReply">
+          <div class="image mx-3"><img src="/images/avatars/image-amyrobson.png" height="30" alt=""></div>
+          <textarea class="inputRep"></textarea>
+          <button class="buttReply">Reply</button>
+        </div>
+      </div>
+      
+      <div class="addComment">
+        <div class="image mx-3"><img src="/images/avatars/image-amyrobson.png" height="30" alt=""></div>
+        <textarea class="input"></textarea>
+        <button class="button">Send</button>
+      </div>
+
+      <!-- <div class="addReply">
+        <div class="image mx-3"><img src="/images/avatars/image-amyrobson.png" height="30" alt=""></div>
+        <textarea class="inputRep"></textarea>
+        <button class="buttReply">Reply</button>
+      </div> -->
+  </main>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Edward Apersil</a>.
+  </div>
+  <script src="/index.js"></script>
+</body>
+
+</html>

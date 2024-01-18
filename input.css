@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    max-width: 1220px;
+    margin: 0 auto;
+    height: 100vh;
+    margin-top: 2rem;
+    background-color: hsl(228, 33%, 97%);
+}
+
+.comments{
+    background-color: hsl(228, 33%, 97%);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    display: flex;
+    padding: 1rem;
+    width: 1000px;
+}
+
+.commit{
+    display: flex;
+}
+/* 
+.text{
+    display: flex;
+} */
+
+.reply{
+    display: flex;
+}
+
+.profile{
+    display: flex;
+    margin-left: 10px;
+    justify-content: space-between;
+}
