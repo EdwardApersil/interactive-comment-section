@@ -67,7 +67,7 @@ const data = {
               png: "./images/avatars/image-juliusomo.png",
               webp: "./images/avatars/image-juliusomo.webp",
             },
-            username: "juliusomo",
+            username: "Edward Apersil",
           },
         },
       ],
